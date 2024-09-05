@@ -452,7 +452,7 @@ function sendEmail(event) {
     let subjectField = document.getElementById('subject-field');
     let messageField = document.getElementById('message-field');
 
-    if (nameField && emailField && subjectField && messageField) {
+    if (nameField && emailField && subjectField && messageField && emailField.value.endsWith("@gmail.com")) {
         let params = {
             from_name: nameField.value,
             email_id: emailField.value,
